@@ -1,0 +1,6 @@
+Steps used to create this file using the command line:
+
+erl
+c(afile_server).
+FileServer = afile_server:start(".").
+FileServer ! {self(), {put_file, "filename", "message"}}.
